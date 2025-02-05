@@ -1,0 +1,36 @@
+<!-- Cartão de aniversário para uma pessoa especial -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Aniversário</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="cartao" id="cartao">
+        <div class="capa">
+            <h1>Feliz Aniversário, Davy!</h1>
+            <img src="images/davybe.jpg" alt="capa">
+        </div>
+
+        <div class="pagina">
+            <h1>Parabéns, Bê!</h1>
+            <p>Queria aproveitar esse dia especial para te dizer que gosto muito de você. Não só pelo que você é, mas pelo jeito como faz tudo ao seu redor parecer melhor. Espero que seu dia seja tão incrível quanto você. <br>Fiz uma playlist logo a baixo contendo algumas músicas nas quais me fazem lembrar você quando eu as ouço e o porque.</p>
+            <button class="botao" id="abrir-playlist">Ver Playlist</button>
+        </div>
+
+        <div class="playlist" id="playlist">
+            <h3>Playlist de Músicas</h3>
+            <button class="botao-musica" onclick="mostrarTexto('musica1')">Training Wheels – Melanie Martinez</button>
+            <p id="musica1" class="texto" style="display:none;">Esta música me lembra o jeito que eu quero estar ao seu lado, aprendendo e crescendo juntos, sem medo de mostrar o que sinto.</p>
+            <button class="botao-musica" onclick="mostrarTexto('musica2')">High School Sweethearts – Melanie Martinez</button>
+            <p id="musica2" class="texto" style="display:none;">Esta música me lembra você porque eu quero ser para você alguém que realmente te entenda e te ame de verdade, sem joguinhos ou incertezas.</p>
+            <button class="botao-musica" onclick="mostrarTexto('musica3')">Love Dive - IVE</button>
+            <p id="musica3" class="texto" style="display:none;">Esta música me lembra você porque, se amar é dar um mergulho no desconhecido, eu mergulharia sem pensar duas vezes por você.</p>
+            <button class="botao" id="fechar-playlist">Fechar Playlist</button>
+        </div>
+    </div>
+</body>
+</html>
