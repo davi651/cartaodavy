@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #283C63;
+    font-size: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    background-color: #486bab;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #4269b8;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.capa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagina, .playlist {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagina.active, .playlist.active {
+    display: block;
+}
+
+.pagina h1, .pagina p, .playlist h3 {
+    color: rgb(255, 255, 255);
+}
+
+.botao, .botao-musica {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #355185;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao:hover, .botao-musica:hover {
+    background-color: #4a86e8;
+}
+
+.texto {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #e9e9e9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
